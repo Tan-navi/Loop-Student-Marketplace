@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,24 +19,27 @@
 
     <!-- NAVIGATION -->
     <header class="navbar">
+
         <a href="profile.html" class="account-link">
-    <span class="account-avatar" id="navAvatar">S</span>
-    <span>
-        <strong id="navName">My Account</strong>
-        <small>Welcome to Loop</small>
-    </span>
-</a>
+            <span class="account-avatar" id="navAvatar">S</span>
+            <span>
+                <strong id="navName">My Account</strong>
+                <small>Welcome to Loop</small>
+            </span>
+        </a>
+
         <a href="index.html" class="logo">loop<span>.</span></a>
 
         <nav class="nav-links">
             <a href="index.html" class="active">Home</a>
-            <a href="#explore">Explore</a>
+            <a href="explore.html">Explore</a>
             <a href="#categories">Categories</a>
         </nav>
 
         <a href="create-listing.html" class="your-existing-button-class">
-    Put it back in the loop ↗
-</a>
+            Put it back in the loop ↗
+        </a>
+
     </header>
 
 
@@ -43,10 +47,13 @@
     <main>
 
         <section class="hero">
+
             <div class="hero-content">
+
                 <span class="eyebrow">YOUR CAMPUS. YOUR COMMUNITY.</span>
 
-                <h1>Good things deserve<br>
+                <h1>
+                    Good things deserve<br>
                     <em>another round.</em>
                 </h1>
 
@@ -57,29 +64,40 @@
                 </p>
 
                 <div class="hero-actions">
-                    <a href="explore.html" class="hero-button">Explore marketplace ↗</a>
-                    <a href="create-listing.html">List something</a>
+                    <a href="explore.html" class="hero-button">
+                        Explore marketplace ↗
+                    </a>
+
+                    <a href="create-listing.html">
+                        List something
+                    </a>
                 </div>
 
                 <div class="hero-note">
                     <span class="online-dot"></span>
                     Made for students, powered by sharing.
                 </div>
+
             </div>
 
+
             <div class="hero-visual">
+
                 <div class="hero-image image-main">
                     <div class="image-label">A little less waste.</div>
                 </div>
 
                 <div class="floating-card">
                     <span class="floating-icon">♻</span>
+
                     <div>
                         <strong>Give things a second life</strong>
                         <small>One campus at a time</small>
                     </div>
                 </div>
+
             </div>
+
         </section>
 
 
@@ -87,100 +105,72 @@
         <section class="category-section" id="categories">
 
             <div class="section-heading">
+
                 <div>
                     <span class="eyebrow">A MARKETPLACE FOR EVERYTHING</span>
                     <h2>Find your kind of deal.</h2>
                 </div>
-                <p>Four ways to make more of what we already have.</p>
+
+                <p>
+                    Four ways to make more of what we already have.
+                </p>
+
             </div>
+
 
             <div class="category-grid">
 
-                <button class="category-card" data-type="RENT">
+                <a href="rent.html" class="category-card">
                     <span class="category-icon">↗</span>
                     <span class="category-number">01</span>
                     <h3>Rent & Borrow</h3>
                     <p>Need it for a while? Borrow it.</p>
-                </button>
+                </a>
 
-                <button class="category-card" data-type="SELL">
+
+                <a href="thrift.html" class="category-card">
                     <span class="category-icon">✳</span>
                     <span class="category-number">02</span>
                     <h3>Thrift Store</h3>
                     <p>Pre-loved things, new homes.</p>
-                </button>
+                </a>
 
-                <button class="category-card" data-type="EXCHANGE">
+
+                <a href="exchange.html" class="category-card">
                     <span class="category-icon">⇄</span>
                     <span class="category-number">03</span>
                     <h3>Exchange</h3>
                     <p>Trade something you have.</p>
-                </button>
+                </a>
 
-                <button class="category-card" data-type="GIVEAWAY">
+
+                <a href="freebies.html" class="category-card">
                     <span class="category-icon">♡</span>
                     <span class="category-number">04</span>
                     <h3>Freebies</h3>
                     <p>Good things, given freely.</p>
-                </button>
+                </a>
 
-            </div>
-        </section>
-
-
-        <!-- EXPLORE LISTINGS -->
-        <section class="explore-section" id="explore">
-
-            <div class="section-heading">
-                <div>
-                    <span class="eyebrow">FRESH FINDS ON CAMPUS</span>
-                    <h2>Things worth finding.</h2>
-                </div>
-
-                <a href="#explore" class="view-all">Explore all ↗</a>
-            </div>
-
-            <div class="filter-bar">
-                <div class="filter-buttons">
-                    <button class="filter-btn active" data-filter="ALL">All items</button>
-                    <button class="filter-btn" data-filter="RENT">Rent</button>
-                    <button class="filter-btn" data-filter="SELL">Thrift</button>
-                    <button class="filter-btn" data-filter="EXCHANGE">Exchange</button>
-                    <button class="filter-btn" data-filter="GIVEAWAY">Freebies</button>
-                </div>
-
-                <input
-                    type="search"
-                    id="searchInput"
-                    placeholder="Search something..."
-                    aria-label="Search listings"
-                >
-            </div>
-
-            <div id="loadingMessage" class="status-message">
-                Finding good things for you...
-            </div>
-
-            <div id="listingContainer" class="listing-grid"></div>
-
-            <div id="emptyMessage" class="empty-message hidden">
-                <h3>No items found.</h3>
-                <p>Try another category or search term.</p>
             </div>
 
         </section>
 
 
-        <!-- BANNER -->
+        <!-- CLOSING BANNER -->
         <section class="closing-banner">
+
             <div>
                 <span class="eyebrow">HAVE SOMETHING TO SHARE?</span>
-                <h2>Someone might need<br>what you don't.</h2>
+                <h2>
+                    Someone might need<br>
+                    what you don't.
+                </h2>
             </div>
 
             <a href="create-listing.html" class="light-button">
                 Put it back in the loop ↗
             </a>
+
         </section>
 
     </main>
@@ -188,12 +178,21 @@
 
     <!-- FOOTER -->
     <footer class="footer">
-        <a href="index.html" class="logo">loop<span>.</span></a>
+
+        <a href="index.html" class="logo">
+            loop<span>.</span>
+        </a>
+
         <p>A little more sharing. A little less waste.</p>
+
         <span>Made for campus communities.</span>
+
     </footer>
 
+
+    <!-- SCRIPTS -->
     <script src="js/main.js"></script>
     <script src="js/account.js"></script>
+
 </body>
 </html>

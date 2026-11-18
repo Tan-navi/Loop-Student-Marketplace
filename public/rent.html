@@ -4,21 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rent | Loop</title>
+    <title>Rent & Borrow | Loop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header class="site-header">
-    <a class="logo" href="index.html">loop.</a>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="rent.html">Rent</a>
-        <a href="thrift.html">Thrift</a>
-        <a href="exchange.html">Exchange</a>
-        <a href="freebies.html">Freebies</a>
-    </nav>
+<header class="navbar">
     <a href="profile.html" class="account-link">
         <span class="account-avatar" id="navAvatar">S</span>
         <span>
@@ -26,10 +20,24 @@
             <small>Welcome to Loop</small>
         </span>
     </a>
+
+    <a href="index.html" class="logo">loop<span>.</span></a>
+
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="rent.html" class="active">Rent</a>
+        <a href="thrift.html">Thrift</a>
+        <a href="exchange.html">Exchange</a>
+        <a href="freebies.html">Freebies</a>
+    </nav>
+
+    <a href="create-listing.html" class="your-existing-button-class">
+        Put it back in the loop ↗
+    </a>
 </header>
 
 <main class="explore-section">
-    <p class="eyebrow">THE LOOP MARKETPLACE</p>
+    <span class="eyebrow">THE LOOP MARKETPLACE</span>
     <h1>Rent what you need.</h1>
     <p>Borrow useful things from students around your campus.</p>
 
@@ -41,5 +49,7 @@
 <script>
     loadMarketplace("RENT");
 </script>
+
 </body>
 </html>
+

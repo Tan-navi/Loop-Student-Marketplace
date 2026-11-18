@@ -155,3 +155,57 @@
         flex-direction: column;
     }
 }
+
+.request-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.decision-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.accept-button,
+.reject-button {
+    border: none;
+    border-radius: 8px;
+    padding: 9px 15px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.accept-button {
+    background: #244B3C;
+    color: white;
+}
+
+.accept-button:hover {
+    background: #18382c;
+}
+
+.reject-button {
+    background: #f5e8e5;
+    color: #a33b32;
+}
+
+.reject-button:hover {
+    background: #efd7d2;
+}
+
+@media (max-width: 600px) {
+    .activity-item {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .request-actions {
+        align-items: flex-start;
+        width: 100%;
+    }
+}

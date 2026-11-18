@@ -5,25 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freebies | Loop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav>
-        <a href="index.html">loop.</a>
+
+<header class="navbar">
+    <a href="profile.html" class="account-link">
+        <span class="account-avatar" id="navAvatar">S</span>
+        <span>
+            <strong id="navName">My Account</strong>
+            <small>Welcome to Loop</small>
+        </span>
+    </a>
+
+    <a href="index.html" class="logo">loop<span>.</span></a>
+
+    <nav class="nav-links">
         <a href="index.html">Home</a>
         <a href="rent.html">Rent</a>
         <a href="thrift.html">Thrift</a>
         <a href="exchange.html">Exchange</a>
-        <a href="freebies.html">Freebies</a>
+        <a href="freebies.html" class="active">Freebies</a>
     </nav>
 
-    <main class="marketplace-page">
-        <h1>Freebies</h1>
-        <p>Find useful things shared freely by students.</p>
-        <div id="marketplaceGrid" class="product-grid"></div>
-    </main>
+    <a href="create-listing.html" class="your-existing-button-class">
+        Put it back in the loop ↗
+    </a>
+</header>
 
-    <script src="js/marketplace.js"></script>
-    <script>loadMarketplace("GIVEAWAY");</script>
+<main class="explore-section">
+    <span class="eyebrow">GOOD THINGS SHOULD BE SHARED</span>
+    <h1>Find something for free.</h1>
+    <p>Explore useful things generously shared by fellow students.</p>
+
+    <div id="marketplaceGrid" class="product-grid"></div>
+</main>
+
+<script src="js/account.js"></script>
+<script src="js/marketplace.js"></script>
+<script>
+    loadMarketplace("GIVEAWAY");
+</script>
+
 </body>
 </html>
+
+
