@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List an Item | Loop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/listing.css">
+</head>
+<body>
+<header class="site-header">
+    <a class="logo" href="index.html">loop.</a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="rent.html">Rent</a>
+        <a href="thrift.html">Thrift</a>
+        <a href="exchange.html">Exchange</a>
+        <a href="freebies.html">Freebies</a>
+    </nav>
+    <a href="profile.html" class="account-link">
+        <span class="account-avatar" id="navAvatar">S</span>
+        <span><strong id="navName">My Account</strong><small>Welcome to Loop</small></span>
+    </a>
+</header>
+
+<main class="listing-container">
+    <p class="eyebrow">GIVE SOMETHING A NEW HOME</p>
+    <h1>Put it back in the loop.</h1>
+    <p>Share something useful with someone in your campus community.</p>
+
+    <form id="listingForm">
+        <label>Item name *</label>
+        <input id="itemName" required maxlength="150" placeholder="e.g. Scientific Calculator">
+
+        <label>Description</label>
+        <textarea id="description" rows="4" placeholder="Tell students a little about your item..."></textarea>
+
+        <label>Category *</label>
+        <select id="category" required>
+            <option value="">Choose a category</option>
+            <option>Books</option>
+            <option>Electronics</option>
+            <option>Clothing</option>
+            <option>Accessories</option>
+            <option>Hostel Essentials</option>
+            <option>Stationery</option>
+        </select>
+
+        <label>How would you like to list it? *</label>
+        <select id="listingType" required>
+            <option value="">Choose listing type</option>
+            <option value="RENT">Rent</option>
+            <option value="SELL">Thrift / Sell</option>
+            <option value="EXCHANGE">Exchange</option>
+            <option value="GIVEAWAY">Freebie</option>
+        </select>
+
+        <label>Price (₹)</label>
+        <input id="price" type="number" min="0" step="0.01" value="0">
+
+        <label>Condition</label>
+        <select id="itemCondition">
+            <option>Like New</option>
+            <option selected>Good</option>
+            <option>Fair</option>
+        </select>
+
+        <p id="formMessage"></p>
+        <button type="submit" class="submit-listing">Publish listing</button>
+    </form>
+</main>
+
+<script src="js/account.js"></script>
+<script src="js/listing.js"></script>
+</body>
+</html>

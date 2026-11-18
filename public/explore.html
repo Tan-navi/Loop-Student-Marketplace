@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore | Loop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+    <a class="logo" href="index.html">loop.</a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="rent.html">Rent</a>
+        <a href="thrift.html">Thrift</a>
+        <a href="exchange.html">Exchange</a>
+        <a href="freebies.html">Freebies</a>
+    </nav>
+    <a href="profile.html" class="account-link">
+        <span class="account-avatar" id="navAvatar">S</span>
+        <span><strong id="navName">My Account</strong><small>Welcome to Loop</small></span>
+    </a>
+</header>
+
+<main class="explore-section">
+    <p class="eyebrow">THE CAMPUS MARKETPLACE</p>
+    <h1>Explore everything.</h1>
+    <p>Find something useful, pass something on, or discover a new favourite.</p>
+
+    <div class="explore-controls">
+        <input id="searchInput" type="search" placeholder="Search for something...">
+        <select id="typeFilter">
+            <option value="">All categories</option>
+            <option value="RENT">Rent</option>
+            <option value="SELL">Thrift</option>
+            <option value="EXCHANGE">Exchange</option>
+            <option value="GIVEAWAY">Freebies</option>
+        </select>
+    </div>
+
+    <div id="marketplaceGrid" class="product-grid"></div>
+</main>
+
+<script src="js/account.js"></script>
+<script src="js/explore.js"></script>
+</body>
+</html>

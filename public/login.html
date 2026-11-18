@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Welcome to Loop</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+
+    <main class="login-page">
+
+        <!-- LEFT SIDE -->
+        <section class="login-left">
+
+            <a href="login.html" class="logo">loop<span>.</span></a>
+
+            <div class="login-content">
+
+                <span class="eyebrow">YOUR CAMPUS. YOUR COMMUNITY.</span>
+
+                <h1>Good things<br>
+                    <em>come around.</em>
+                </h1>
+
+                <p class="intro">
+                    A little more sharing, a little less waste.
+                    Discover things, exchange what you have,
+                    and find a new home for what you don't need.
+                </p>
+
+                <div class="login-features">
+
+                    <div class="feature">
+                        <span>↗</span>
+                        <div>
+                            <strong>Discover more</strong>
+                            <small>Find useful things around campus.</small>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <span>⇄</span>
+                        <div>
+                            <strong>Share and exchange</strong>
+                            <small>Give your belongings another life.</small>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <span>♡</span>
+                        <div>
+                            <strong>Be part of the loop</strong>
+                            <small>Make campus life more sustainable.</small>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <p class="left-footer">
+                A marketplace made for campus communities.
+            </p>
+
+        </section>
+
+
+        <!-- RIGHT SIDE -->
+        <section class="login-right">
+
+            <div class="login-card">
+
+                <div class="mobile-logo">
+                    <a href="login.html" class="logo">loop<span>.</span></a>
+                </div>
+
+                <span class="eyebrow">WELCOME TO LOOP</span>
+
+                <h2>Let's get you<br>started.</h2>
+
+                <p class="form-description">
+                    Tell us a little about yourself before
+                    exploring your campus marketplace.
+                </p>
+
+                <form id="loginForm">
+
+                    <div class="form-group">
+                        <label for="studentName">Your name</label>
+
+                        <input
+                            type="text"
+                            id="studentName"
+                            placeholder="e.g. Aditi Sharma"
+                            maxlength="50"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="college">Your college</label>
+
+                        <select id="college" required>
+                            <option value="">Select your college</option>
+                            <option value="IGDTUW">
+                                IGDTUW
+                            </option>
+                            <option value="DTU">
+                                Delhi Technological University
+                            </option>
+                            <option value="NSUT">
+                                Netaji Subhas University of Technology
+                            </option>
+                            <option value="Other">
+                                Other college
+                            </option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="continue-button">
+                        Continue to Loop <span>↗</span>
+                    </button>
+
+                </form>
+
+                <div class="separator">
+                    <span></span>
+                    <p>OR</p>
+                    <span></span>
+                </div>
+
+                <button type="button" id="guestButton" class="guest-button">
+                    Continue as Guest
+                </button>
+
+                <p class="privacy-note">
+                    This is a student marketplace demo.
+                    No real account or password is required.
+                </p>
+
+                <p id="errorMessage" class="error-message"></p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="js/login.js"></script>
+
+</body>
+</html>

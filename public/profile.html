@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile | Loop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+    <a class="logo" href="index.html">loop.</a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="rent.html">Rent</a>
+        <a href="thrift.html">Thrift</a>
+        <a href="exchange.html">Exchange</a>
+        <a href="freebies.html">Freebies</a>
+    </nav>
+    <a href="profile.html" class="account-link" id="accountLink">My Profile</a>
+</header>
+
+<main class="profile-container">
+    <section class="profile-hero">
+        <div class="avatar" id="avatar">S</div>
+        <div>
+            <p class="eyebrow">YOUR LOOP ACCOUNT</p>
+            <h1 id="studentName">Loading profile...</h1>
+            <p id="studentCollege"></p>
+            <p class="joined" id="joinedDate"></p>
+        </div>
+    </section>
+
+    <section class="stats-grid">
+        <div class="stat-card">
+            <span>Items listed</span>
+            <strong id="listingCount">0</strong>
+        </div>
+        <div class="stat-card">
+            <span>Requests received</span>
+            <strong id="receivedCount">0</strong>
+        </div>
+        <div class="stat-card">
+            <span>Requests made</span>
+            <strong id="madeCount">0</strong>
+        </div>
+    </section>
+
+    <section class="profile-section">
+        <h2>My listings</h2>
+        <div id="myListings" class="activity-list">Loading...</div>
+    </section>
+
+    <section class="profile-section">
+        <h2>Requests received</h2>
+        <div id="requestsReceived" class="activity-list">Loading...</div>
+    </section>
+
+    <section class="profile-section">
+        <h2>Requests I've made</h2>
+        <div id="requestsMade" class="activity-list">Loading...</div>
+    </section>
+
+    <button id="logoutButton" class="logout-button">Log out</button>
+</main>
+
+<script src="js/profile.js"></script>
+</body>
+</html>

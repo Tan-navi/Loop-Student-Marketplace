@@ -1,0 +1,157 @@
+
+.profile-container {
+    max-width: 1050px;
+    margin: 55px auto;
+    padding: 0 24px 60px;
+}
+
+.profile-hero {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 35px;
+    background: #DCE7DC;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+.avatar {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background: #244B3C;
+    color: white;
+    display: grid;
+    place-items: center;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.profile-hero h1 {
+    font-family: 'Playfair Display', serif;
+    margin: 5px 0;
+    color: #244B3C;
+}
+
+.eyebrow {
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.joined {
+    font-size: 13px;
+    color: #65736A;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 25px 0 45px;
+}
+
+.stat-card {
+    background: #F8F7F2;
+    border: 1px solid #E7E5DC;
+    border-radius: 15px;
+    padding: 23px;
+}
+
+.stat-card span {
+    display: block;
+    color: #68736B;
+    font-size: 14px;
+}
+
+.stat-card strong {
+    display: block;
+    color: #244B3C;
+    font-size: 30px;
+    margin-top: 8px;
+}
+
+.profile-section {
+    margin: 35px 0;
+}
+
+.profile-section h2 {
+    font-family: 'Playfair Display', serif;
+    color: #244B3C;
+    margin-bottom: 17px;
+}
+
+.activity-list {
+    display: grid;
+    gap: 12px;
+}
+
+.activity-item {
+    padding: 18px 20px;
+    border: 1px solid #E7E5DC;
+    border-radius: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    background: white;
+}
+
+.activity-item strong {
+    color: #244B3C;
+}
+
+.activity-item p {
+    margin: 5px 0 0;
+    color: #758078;
+    font-size: 13px;
+}
+
+.activity-status {
+    font-size: 12px;
+    font-weight: 700;
+    color: #244B3C;
+    background: #DCE7DC;
+    border-radius: 20px;
+    padding: 7px 12px;
+}
+
+.empty-state {
+    color: #7A817B;
+    padding: 20px;
+    background: #F8F7F2;
+    border-radius: 12px;
+}
+
+.logout-button {
+    border: 1px solid #B65C50;
+    color: #B65C50;
+    background: white;
+    border-radius: 9px;
+    padding: 12px 24px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+@media(max-width: 650px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-hero {
+        padding: 22px;
+        align-items: flex-start;
+    }
+
+    .avatar {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+        flex-shrink: 0;
+    }
+
+    .activity-item {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
